@@ -3,7 +3,7 @@
 
 <h1>Intro</h1>
 A plugin for SCP: SL that drops a grenade at SCP 173's feet upon death.
-This is a port of [PFE](https://github.com/Cyanox62/PFE "PFE Git") (Peanut Fucking Explodes) for Exiled 5.0.0
+This is a port of [PFE](https://github.com/Cyanox62/PFE) (Peanut Fucking Explodes) for Exiled 5.0.0
 
 <h1>Requirements</h1>
 
