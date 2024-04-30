@@ -1,4 +1,3 @@
-![img](https://img.shields.io/github/downloads/XoMiya-WPC/WalnutFuckingExplodes/total?style=for-the-badge)
 # WalnutFuckingExplodes
 
 <h1>Intro</h1>
@@ -16,11 +15,13 @@ This plugin **WILL NOT WORK** on previous versions
 | Config  | Type | Def Value |
 | ------------- | ------------- | ------------- |
 | `is_enabled`  | Boolean  | true  |
+| `debug` | Boolean | false |
 | `fuse_time`  | Float  | 0.5  |
 | `magnitude`  | Int  | 1  |
 | `SCPFriendlyFireDamage` | Float | 0 |
 
 * **is_enabled:** Defines if the plugin will be enabled or not. Only enter `true` or `false`.
+* **debug:** Defines if the plugin will print out debug statements (there's a lot). Only `true` or `false`.
 * **fuse_time:** Time delay between SCP 173 dying and the grenade Detonating.
 * **magnitude:** How many grenades to summon. The larger this number the laggier and lower frame rate the death will be.
 * **SCPFriendlyFireDamage:** The multiplier of damage that is caused to other SCPs.
