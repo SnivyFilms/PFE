@@ -40,7 +40,7 @@ namespace PFE
                     Log.Debug("PFE: Setting fuse time of " + plugin.Config.FuseTime);
                     grenade.FuseTime = plugin.Config.FuseTime;
                     Log.Debug("PFE: Setting the SCP Damage Multipler (friendly fire) to " + plugin.Config.SCPFriendlyFireDamage);
-                    grenade.ScpDamageMultiplier = plugin.Config.SCPFriendlyFireDamage;
+                    grenade.ScpDamageMultiplier = plugin.Config.SCPFriendlyFireDamage * 3;
                     Log.Debug("PFE: Spawning " + plugin.Config.Magnitude + " Grenades at " + PeanutDeathLocation);
                     grenade.SpawnActive(PeanutDeathLocation);
                 }
