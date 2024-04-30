@@ -1,4 +1,3 @@
-![img](https://img.shields.io/github/downloads/XoMiya-WPC/WalnutFuckingExplodes/total?style=for-the-badge)
 # WalnutFuckingExplodes
 
 <h1>Intro</h1>
