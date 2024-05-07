@@ -32,15 +32,15 @@ namespace PFE
             Log.Debug("PFE: Checking if the dead player was SCP-173 (again) for on Died Event");
             if (ev.TargetOldRole == RoleTypeId.Scp173)
             {
-                Log.Debug("PFE: Getting the amount of grenades specified in the managtude config");
+                Log.Debug("PFE: Getting the amount of grenades specified in the magnitude config");
                 for (int i = 0; i < plugin.Config.Magnitude; i++)
                 {
                     Log.Debug("PFE: Spawning " + plugin.Config.Magnitude + " Grenades");
                     ExplosiveGrenade grenade = (ExplosiveGrenade)Item.Create(ItemType.GrenadeHE);
                     Log.Debug("PFE: Setting fuse time of " + plugin.Config.FuseTime);
                     grenade.FuseTime = plugin.Config.FuseTime;
-                    Log.Debug("PFE: Setting the SCP Damage Multipler (friendly fire) to " + plugin.Config.SCPFriendlyFireDamage);
-                    grenade.ScpDamageMultiplier = plugin.Config.SCPFriendlyFireDamage * 3;
+                    Log.Debug("PFE: Setting the SCP Damage Multipler (friendly fire) to " + plugin.Config.ScpFriendlyFireDamage);
+                    grenade.ScpDamageMultiplier = plugin.Config.ScpFriendlyFireDamage * 3;
                     Log.Debug("PFE: Spawning " + plugin.Config.Magnitude + " Grenades at " + PeanutDeathLocation);
                     grenade.SpawnActive(PeanutDeathLocation);
                 }

@@ -18,6 +18,6 @@ namespace PFE
         public int Magnitude { get; set; } = 1;
 
         [Description("Determine the friendly fire multiplier for SCPs, 0 = no damage, 1 = normal grenade damage multipler, 2 = 2 times normal grenade multipler")]
-        public float SCPFriendlyFireDamage { get; set; } = 0;
+        public float ScpFriendlyFireDamage { get; set; } = 0;
     }
 }
