@@ -1,4 +1,4 @@
-# WalnutFuckingExplodes
+# PeanutFuckingExplodes
 
 <h1>Intro</h1>
 A plugin for SCP: SL that drops a grenade at SCP 173's feet upon death.
