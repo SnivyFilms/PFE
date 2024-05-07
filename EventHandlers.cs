@@ -17,34 +17,34 @@ namespace PFE
 
         public void OnPlayerDying(DyingEventArgs ev)
         {
-            Log.Debug("PFE: Checking if dying player is SCP-173 for on Dying Event");
-            if (ev.Player.Role != RoleTypeId.Scp173)
+            Log.Debug("EFE: Checking the dying player");
+            /*if (ev.Player.Role != RoleTypeId.Scp173)
             {
                 Log.Debug("PFE: Player isn't SCP-173 on Dying Event");
                 return;
-            }
-            Log.Debug("PFE: Player is SCP-173 on Dying Event");
+            }*/
+            Log.Debug("EFE: Player is dying");
             PeanutDeathLocation = ev.Player.Position;
         }
 
         public void OnPlayerDeath(DiedEventArgs ev)
         {
-            Log.Debug("PFE: Checking if the dead player was SCP-173 (again) for on Died Event");
-            if (ev.TargetOldRole == RoleTypeId.Scp173)
-            {
-                Log.Debug("PFE: Getting the amount of grenades specified in the managtude config");
+            Log.Debug("EFE: Checking the dead player again");
+            /*if (ev.TargetOldRole == RoleTypeId.Scp173)
+            {*/
+                Log.Debug("EFE: Getting the amount of grenades specified in the managtude config");
                 for (int i = 0; i < plugin.Config.Magnitude; i++)
                 {
-                    Log.Debug("PFE: Spawning " + plugin.Config.Magnitude + " Grenades");
+                    Log.Debug("EFE: Spawning " + plugin.Config.Magnitude + " Grenades");
                     ExplosiveGrenade grenade = (ExplosiveGrenade)Item.Create(ItemType.GrenadeHE);
-                    Log.Debug("PFE: Setting fuse time of " + plugin.Config.FuseTime);
+                    Log.Debug("EFE: Setting fuse time of " + plugin.Config.FuseTime);
                     grenade.FuseTime = plugin.Config.FuseTime;
-                    Log.Debug("PFE: Setting the SCP Damage Multipler (friendly fire) to " + plugin.Config.SCPFriendlyFireDamage);
+                    Log.Debug("EFE: Setting the SCP Damage Multipler (friendly fire) to " + plugin.Config.SCPFriendlyFireDamage);
                     grenade.ScpDamageMultiplier = plugin.Config.SCPFriendlyFireDamage * 3;
-                    Log.Debug("PFE: Spawning " + plugin.Config.Magnitude + " Grenades at " + PeanutDeathLocation);
+                    Log.Debug("EFE: Spawning " + plugin.Config.Magnitude + " Grenades at " + PeanutDeathLocation);
                     grenade.SpawnActive(PeanutDeathLocation);
                 }
-            }
+            //}
         }
 
     }
